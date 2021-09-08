@@ -31,6 +31,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/penelopearaujo/palettes.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/**/*.{swift,h,m}"
   spec.resources           = ['Sources/**/*.xcassets']
+  spec.on_demand_resources = { 'roboto' => ['Sources/Resources/*.ttf'] }
 
   spec.swift_version = '5.0' 
   spec.platform      = :ios, '14.4'
