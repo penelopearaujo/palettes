@@ -16,6 +16,7 @@
 		7DD567D426E92A05006AD63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD567D226E92A05006AD63E /* Main.storyboard */; };
 		7DD567D626E92A07006AD63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD567D526E92A07006AD63E /* Assets.xcassets */; };
 		7DD567D926E92A07006AD63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD567D726E92A07006AD63E /* LaunchScreen.storyboard */; };
+		7DD567E226E92B4E006AD63E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD567E126E92B4E006AD63E /* Palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		7DD567D526E92A07006AD63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD567D826E92A07006AD63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD567DA26E92A07006AD63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD567E126E92B4E006AD63E /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				7DD567AD26E929B0006AD63E /* palettes.h */,
 				7DD567AE26E929B0006AD63E /* Info.plist */,
+				7DD567E126E92B4E006AD63E /* Palette.swift */,
 			);
 			path = palettes;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					7DD567A926E929B0006AD63E = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					7DD567B226E929B1006AD63E = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD567E226E92B4E006AD63E /* Palette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		7DD567BF26E929B1006AD63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JM6RH6V5Z9;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.penelopearaujo.palettes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		7DD567C026E929B1006AD63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JM6RH6V5Z9;
@@ -486,6 +494,7 @@
 		7DD567C226E929B1006AD63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JM6RH6V5Z9;
 				INFOPLIST_FILE = palettesTests/Info.plist;
@@ -504,6 +513,7 @@
 		7DD567C326E929B1006AD63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JM6RH6V5Z9;
 				INFOPLIST_FILE = palettesTests/Info.plist;
