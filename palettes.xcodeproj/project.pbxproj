@@ -17,6 +17,7 @@
 		7DD567D626E92A07006AD63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD567D526E92A07006AD63E /* Assets.xcassets */; };
 		7DD567D926E92A07006AD63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD567D726E92A07006AD63E /* LaunchScreen.storyboard */; };
 		7DD567E226E92B4E006AD63E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD567E126E92B4E006AD63E /* Palette.swift */; };
+		7DD567E926E9519C006AD63E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD567E826E9519C006AD63E /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		7DD567D826E92A07006AD63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD567DA26E92A07006AD63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DD567E126E92B4E006AD63E /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		7DD567E826E9519C006AD63E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,7 @@
 		7DD567A026E929B0006AD63E = {
 			isa = PBXGroup;
 			children = (
-				7DD567AC26E929B0006AD63E /* palettes */,
+				7DD567E626E94F17006AD63E /* Sources */,
 				7DD567B726E929B1006AD63E /* palettesTests */,
 				7DD567CB26E92A05006AD63E /* SampleApp */,
 				7DD567AB26E929B0006AD63E /* Products */,
@@ -91,16 +93,6 @@
 				7DD567CA26E92A05006AD63E /* SampleApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7DD567AC26E929B0006AD63E /* palettes */ = {
-			isa = PBXGroup;
-			children = (
-				7DD567AD26E929B0006AD63E /* palettes.h */,
-				7DD567AE26E929B0006AD63E /* Info.plist */,
-				7DD567E126E92B4E006AD63E /* Palette.swift */,
-			);
-			path = palettes;
 			sourceTree = "<group>";
 		};
 		7DD567B726E929B1006AD63E /* palettesTests */ = {
@@ -124,6 +116,25 @@
 				7DD567DA26E92A07006AD63E /* Info.plist */,
 			);
 			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		7DD567E626E94F17006AD63E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7DD567E726E9518F006AD63E /* Resources */,
+				7DD567E126E92B4E006AD63E /* Palette.swift */,
+				7DD567AD26E929B0006AD63E /* palettes.h */,
+				7DD567AE26E929B0006AD63E /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7DD567E726E9518F006AD63E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7DD567E826E9519C006AD63E /* Media.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD567E926E9519C006AD63E /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
