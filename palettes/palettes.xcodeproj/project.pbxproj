@@ -7,30 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52FB507726EA574C00E88FED /* palettes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB506D26EA574C00E88FED /* palettes.framework */; };
-		52FB507C26EA574C00E88FED /* palettesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB507B26EA574C00E88FED /* palettesTests.swift */; };
 		52FB507E26EA574C00E88FED /* palettes.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FB507026EA574C00E88FED /* palettes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52FB508A26EA578900E88FED /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FB508926EA578900E88FED /* Roboto-Regular.ttf */; settings = {ASSET_TAGS = (i, roboto, ); }; };
 		52FB508E26EA579B00E88FED /* Palettes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB508D26EA579B00E88FED /* Palettes.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		52FB507826EA574C00E88FED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52FB506426EA574C00E88FED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52FB506C26EA574C00E88FED;
-			remoteInfo = palettes;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		52FB506D26EA574C00E88FED /* palettes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = palettes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FB507026EA574C00E88FED /* palettes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = palettes.h; sourceTree = "<group>"; };
 		52FB507126EA574C00E88FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52FB507626EA574C00E88FED /* palettesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = palettesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52FB507B26EA574C00E88FED /* palettesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palettesTests.swift; sourceTree = "<group>"; };
-		52FB507D26EA574C00E88FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FB508926EA578900E88FED /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		52FB508D26EA579B00E88FED /* Palettes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palettes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,14 +28,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52FB507326EA574C00E88FED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52FB507726EA574C00E88FED /* palettes.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,7 +35,6 @@
 			isa = PBXGroup;
 			children = (
 				52FB506F26EA574C00E88FED /* palettes */,
-				52FB507A26EA574C00E88FED /* palettesTests */,
 				52FB506E26EA574C00E88FED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				52FB506D26EA574C00E88FED /* palettes.framework */,
-				52FB507626EA574C00E88FED /* palettesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,15 +56,6 @@
 				52FB508D26EA579B00E88FED /* Palettes.swift */,
 			);
 			path = palettes;
-			sourceTree = "<group>";
-		};
-		52FB507A26EA574C00E88FED /* palettesTests */ = {
-			isa = PBXGroup;
-			children = (
-				52FB507B26EA574C00E88FED /* palettesTests.swift */,
-				52FB507D26EA574C00E88FED /* Info.plist */,
-			);
-			path = palettesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,24 +90,6 @@
 			productReference = 52FB506D26EA574C00E88FED /* palettes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		52FB507526EA574C00E88FED /* palettesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52FB508426EA574C00E88FED /* Build configuration list for PBXNativeTarget "palettesTests" */;
-			buildPhases = (
-				52FB507226EA574C00E88FED /* Sources */,
-				52FB507326EA574C00E88FED /* Frameworks */,
-				52FB507426EA574C00E88FED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				52FB507926EA574C00E88FED /* PBXTargetDependency */,
-			);
-			name = palettesTests;
-			productName = palettesTests;
-			productReference = 52FB507626EA574C00E88FED /* palettesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,9 +107,6 @@
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
 					};
-					52FB507526EA574C00E88FED = {
-						CreatedOnToolsVersion = 12.4;
-					};
 				};
 			};
 			buildConfigurationList = 52FB506726EA574C00E88FED /* Build configuration list for PBXProject "palettes" */;
@@ -178,7 +123,6 @@
 			projectRoot = "";
 			targets = (
 				52FB506C26EA574C00E88FED /* palettes */,
-				52FB507526EA574C00E88FED /* palettesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -189,13 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FB508A26EA578900E88FED /* Roboto-Regular.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52FB507426EA574C00E88FED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,23 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52FB507226EA574C00E88FED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52FB507C26EA574C00E88FED /* palettesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		52FB507926EA574C00E88FED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52FB506C26EA574C00E88FED /* palettes */;
-			targetProxy = 52FB507826EA574C00E88FED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		52FB507F26EA574C00E88FED /* Debug */ = {
@@ -368,12 +289,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.penelopearaujo.palettes;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pmpa.palettes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -394,49 +316,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.penelopearaujo.palettes;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pmpa.palettes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		52FB508526EA574C00E88FED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JM6RH6V5Z9;
-				INFOPLIST_FILE = palettesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.penelopearaujo.palettesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		52FB508626EA574C00E88FED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JM6RH6V5Z9;
-				INFOPLIST_FILE = palettesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.penelopearaujo.palettesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -457,15 +342,6 @@
 			buildConfigurations = (
 				52FB508226EA574C00E88FED /* Debug */,
 				52FB508326EA574C00E88FED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52FB508426EA574C00E88FED /* Build configuration list for PBXNativeTarget "palettesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52FB508526EA574C00E88FED /* Debug */,
-				52FB508626EA574C00E88FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

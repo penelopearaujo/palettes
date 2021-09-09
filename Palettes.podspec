@@ -15,8 +15,10 @@ Pod::Spec.new do |spec|
   spec.author        = { "PMPA" => "pmpa@cin.ufpe.br" }
 
   spec.source       = { :git => "https://github.com/penelopearaujo/palettes.git", :tag => "#{spec.version}" }
-  spec.source_files  = "palettes/**/*.{swift,h,m}"
+  spec.source_files  = "  **/*.{swift,h,m}"
   spec.on_demand_resources = { 'roboto' => ['Sources/Resources/*.ttf'] }
+
+  spec.pod_target_xcconfig = {"PRODUCT_BUNDLE_IDENTIFIER" => "me.pmpa.palettes" ,"DEVELOPMENT_TEAM" => "PMPA"}
 
   spec.swift_version = '5.0' 
   spec.platform      = :ios, '14.4'
