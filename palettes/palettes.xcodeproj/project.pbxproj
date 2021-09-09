@@ -10,7 +10,7 @@
 		52FB507726EA574C00E88FED /* palettes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB506D26EA574C00E88FED /* palettes.framework */; };
 		52FB507C26EA574C00E88FED /* palettesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB507B26EA574C00E88FED /* palettesTests.swift */; };
 		52FB507E26EA574C00E88FED /* palettes.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FB507026EA574C00E88FED /* palettes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52FB508A26EA578900E88FED /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FB508926EA578900E88FED /* Roboto-Regular.ttf */; };
+		52FB508A26EA578900E88FED /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FB508926EA578900E88FED /* Roboto-Regular.ttf */; settings = {ASSET_TAGS = (i, roboto, ); }; };
 		52FB508E26EA579B00E88FED /* Palettes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB508D26EA579B00E88FED /* Palettes.swift */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +148,10 @@
 		52FB506426EA574C00E88FED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					i,
+					roboto,
+				);
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
