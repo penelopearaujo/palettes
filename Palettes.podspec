@@ -1,8 +1,7 @@
-
 Pod::Spec.new do |spec|
 
   spec.name         = "Palettes"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A pod to get palettes and assets."
 
   spec.description  = <<-DESC
@@ -16,8 +15,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/penelopearaujo/palettes.git", :tag => "#{spec.version}" }
   spec.source_files  = "  **/*.{swift,h,m}"
-
-  spec.on_demand_resources = { 'roboto' => ['**/*.ttf'] }
+  spec.on_demand_resources = { 'roboto' => ['palettes/palettes/Roboto-Regular.ttf'] }
 
   spec.pod_target_xcconfig = {"PRODUCT_BUNDLE_IDENTIFIER" => "me.pmpa.palettes" ,"DEVELOPMENT_TEAM" => "PMPA"}
 
